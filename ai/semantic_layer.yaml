@@ -1,0 +1,47 @@
+version: 1
+
+description: >
+  Governed business-facing semantic layer for the fulfillment platform.
+  AI and BI consumers should use these models instead of querying oms directly.
+
+rules:
+  allowed_schemas:
+    - analytics
+
+  forbidden_schemas:
+    - oms
+
+models:
+
+  customer_summary:
+    source: analytics.customer_summary
+    description: One row per customer with order and payment summary.
+    dimensions:
+      - customer_id
+      - customer_name
+      - region
+      - customer_tier
+    metrics:
+      order_count:
+        description: Total number of orders placed by the customer.
+      completed_or_active_order_count:
+        description: Number of orders whose status is not cancelled.
+      completed_payment_value:
+        description: Total value of payments with completed status.
+      last_order_at:
+        description: Timestamp of the customer's most recent order.
+
+  payment_summary:
+    source: analytics.payment_summary
+    description: Payment activity aggregated by status, currency and payment method.
+    dimensions:
+      - payment_status
+      - currency
+      - payment_method
+    metrics:
+      payment_count:
+        description: Number of payments.
+      total_amount:
+        description: Sum of payment amounts.
+      average_payment_amount:
+        description: Average payment amount.
