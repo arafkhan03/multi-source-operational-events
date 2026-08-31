@@ -65,19 +65,19 @@ so downstream consumers do not directly depend on transactional databases.
 
 If you have only **2 minutes**, and want to skim the technical parts, start here:
 
-```text
+Follow the project from architecture to implementation:
+
 README.md
-    ↓
-docs/architecture.md
-    ↓
-infra/cdc/docker-compose.yml
-    ↓
-infra/cdc/postgres-connector.json
-    ↓
-ai/semantic_layer.yaml
-    ↓
-ai/app/web_app.py
-```
+↓
+Architecture
+↓
+CDC Infrastructure
+↓
+Debezium PostgreSQL Connector
+↓
+Governed Semantic Layer
+↓
+AI Web Application
 
 ## Business Scenario
 
