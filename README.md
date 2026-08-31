@@ -54,26 +54,59 @@ If you'd like to discuss the architecture, data platforms, analytics engineering
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:araf.khan03@gmail.com)
 
 ## 📑 Table of Contents
-* [Tech Stack](#tech-stack)
-* [Connect](#connect)
+
+* [Tech Stack](#-tech-stack)
+* [Repository Navigation](#-repository-navigation)
+* [Connect](#-connect)
+* [30-Second Overview](#30-second-overview)
 * [Business Scenario](#business-scenario)
+
+  * [Business Questions the Platform Should Support](#business-questions-the-platform-should-support)
 * [Architecture](#architecture)
-* [Why This Architecture](#why-this-architecture)
+
+  * [Executive Architecture](#executive-architecture)
+* [Why This Architecture?](#why-this-architecture)
 * [Current Implementation](#current-implementation)
+
+  * [Implemented](#-implemented)
+  * [Demonstrated / Simulated Locally](#-demonstrated--simulated-locally)
+  * [Production Evolution](#-production-evolution)
 * [Data Flow](#data-flow)
+
+  * [Operational Data](#operational-data)
+* [CDC and Streaming](#cdc-and-streaming)
+* [Analytics Layer](#analytics-layer)
 * [Governed Semantic Layer](#governed-semantic-layer)
 * [AI Consumption](#ai-consumption)
 * [AI / MCP Extension](#ai--mcp-extension)
-* [Repository Navigation](#repository-navigation)
 * [Running the Project](#running-the-project)
+
+  * [Prerequisites](#prerequisites)
+  * [Start the Infrastructure](#start-the-infrastructure)
+  * [Start the AI Interface](#start-the-ai-interface)
 * [Example Questions](#example-questions)
 * [Operational Model vs Analytical Model](#operational-model-vs-analytical-model)
 * [Production Architecture](#production-architecture)
 * [Engineering Trade-offs](#engineering-trade-offs)
 * [What This Project Demonstrates](#what-this-project-demonstrates)
+
+  * [Data Engineering](#data-engineering)
+  * [Analytics Engineering](#analytics-engineering)
+  * [Platform Engineering](#platform-engineering)
+  * [AI / Data Products](#ai--data-products)
+  * [Architecture](#architecture-1)
 * [Project Evolution](#project-evolution)
 * [Future Evolution](#future-evolution)
+
+  * [Data Platform](#data-platform)
+  * [Analytics](#analytics)
+  * [Reliability](#reliability)
+  * [Platform](#platform)
+  * [AI](#ai)
 * [Project Status](#project-status)
+* [Core Technologies](#core-technologies)
+* [Author](#author)
+* [Connect](#connect-1)
 
 ## 30-Second Overview
 
@@ -812,79 +845,6 @@ The next production-oriented iteration would introduce:
 
 ---
 
-# Interviewer's Guided Tour
-
-If someone asks:
-
-> **"Walk me through the project."**
-
-Use this order:
-
-### 1. Business problem
-
-A multi-regional fulfillment company has multiple operational systems but needs a unified analytical platform.
-
-### 2. Source systems
-
-Start with OMS and explain the operational ownership of customers, orders and payments.
-
-### 3. CDC
-
-Explain why analytics should not continuously query the transactional database.
-
-### 4. Kafka
-
-Explain decoupling and event transport.
-
-### 5. Landing layer
-
-Explain why raw data should have a durable landing boundary.
-
-### 6. Warehouse
-
-Explain why analytical workloads belong downstream of operational systems.
-
-### 7. Analytics models
-
-Open:
-
-```text
-analytics.customer_summary
-analytics.payment_summary
-```
-
-Explain that these are business-facing rather than transactional structures.
-
-### 8. Semantic layer
-
-Open:
-
-```text
-ai/semantic_layer.yaml
-```
-
-Explain governance and business definitions.
-
-### 9. AI
-
-Open the local chatbot and ask:
-
-> Which payment method has the highest number of completed payments?
-
-Show the generated SQL.
-
-### 10. MCP
-
-Explain that MCP provides a standardized interface for AI applications to interact with governed capabilities.
-
-### 11. Production evolution
-
-Finish with:
-
-> "The local implementation is intentionally lightweight. In production I'd move the landing layer to S3, the warehouse to Redshift, use managed Kafka, add orchestration, observability, IAM, CI/CD and stronger AI governance."
-
----
-
 # Project Status
 
 **Portfolio status: Working reference implementation**
@@ -931,3 +891,11 @@ No cloud deployment or production-scale claims are implied by the local implemen
 Senior Data / Analytics Engineering
 
 Focused on building data platforms that connect **operational systems, analytics, business decision-making and emerging AI capabilities**.
+
+## 👋 Connect
+
+If you'd like to discuss the architecture, data platforms, analytics engineering, or AI-enabled data products:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Araf%20Khan-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/arafkhan03)
+
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:araf.khan03@gmail.com)
