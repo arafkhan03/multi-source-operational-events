@@ -41,15 +41,7 @@
 
 If you have only **2 minutes** and want to skim the technical parts, start here:
 
-**[Architecture](./docs/architecture.md)**
-↓
-**[CDC Infrastructure](./infra/cdc/docker-compose.yml)**
-↓
-**[Debezium PostgreSQL Connector](./infra/cdc/postgres-connector.json)**
-↓
-**[Governed Semantic Layer](./ai/semantic_layer.yaml)**
-↓
-**[AI Web Application](./ai/app/web_app.py)**
+**[Architecture](./docs/architecture.md)** → **[CDC](./infra/cdc/docker-compose.yml)** → **[Debezium](./infra/cdc/postgres-connector.json)** → **[Semantic Layer](./ai/semantic_layer.yaml)** → **[AI App](./ai/app/web_app.py)**
 
 ---
 
@@ -60,6 +52,28 @@ If you'd like to discuss the architecture, data platforms, analytics engineering
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Araf%20Khan-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/arafkhan03)
 
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:araf.khan03@gmail.com)
+
+## 📑 Table of Contents
+* [Tech Stack](#tech-stack)
+* [Connect](#connect)
+* [Business Scenario](#business-scenario)
+* [Architecture](#architecture)
+* [Why This Architecture](#why-this-architecture)
+* [Current Implementation](#current-implementation)
+* [Data Flow](#data-flow)
+* [Governed Semantic Layer](#governed-semantic-layer)
+* [AI Consumption](#ai-consumption)
+* [AI / MCP Extension](#ai--mcp-extension)
+* [Repository Navigation](#repository-navigation)
+* [Running the Project](#running-the-project)
+* [Example Questions](#example-questions)
+* [Operational Model vs Analytical Model](#operational-model-vs-analytical-model)
+* [Production Architecture](#production-architecture)
+* [Engineering Trade-offs](#engineering-trade-offs)
+* [What This Project Demonstrates](#what-this-project-demonstrates)
+* [Project Evolution](#project-evolution)
+* [Future Evolution](#future-evolution)
+* [Project Status](#project-status)
 
 ## 30-Second Overview
 
