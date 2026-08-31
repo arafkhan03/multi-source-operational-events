@@ -37,6 +37,32 @@
 
 ---
 
+## 🧭 Repository Navigation
+
+If you have only **2 minutes**, and want to skim the technical parts, start here:
+
+**[README.md](./README.md)**
+↓
+**[Architecture](./docs/architecture.md)**
+↓
+**[CDC Infrastructure](./infra/cdc/docker-compose.yml)**
+↓
+**[Debezium PostgreSQL Connector](./infra/cdc/postgres-connector.json)**
+↓
+**[Governed Semantic Layer](./ai/semantic_layer.yaml)**
+↓
+**[AI Web Application](./ai/app/web_app.py)**
+
+---
+
+## 👋 Connect
+
+If you'd like to discuss the architecture, data platforms, analytics engineering, or AI-enabled data products:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Araf%20Khan-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/arafkhan03)
+
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:araf.khan03@gmail.com)
+
 ## 30-Second Overview
 
 A fictional multi-regional fulfillment and logistics company operates across **order management, warehouse operations, transportation, and connected devices**.
@@ -60,24 +86,6 @@ The design deliberately separates:
 so downstream consumers do not directly depend on transactional databases.
 
 ---
-
-# Repository Navigation
-
-If you have only **2 minutes**, and want to skim the technical parts, start here:
-
-Follow the project from architecture to implementation:
-
-README.md
-↓
-Architecture
-↓
-CDC Infrastructure
-↓
-Debezium PostgreSQL Connector
-↓
-Governed Semantic Layer
-↓
-AI Web Application
 
 ## Business Scenario
 
