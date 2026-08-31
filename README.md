@@ -2,6 +2,40 @@
 
 > **A production-oriented data platform for a multi-regional fulfillment operator — integrating operational systems through CDC and event streaming, landing data for analytics, creating governed business models, and exposing trusted data to BI and AI applications.**
 
+## 🧰 Tech Stack
+
+### Data Engineering
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge\&logo=apachekafka\&logoColor=white)
+![Debezium](https://img.shields.io/badge/Debezium-000000?style=for-the-badge\&logo=debezium\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+
+### Analytics & Data Modeling
+
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Semantic Layer](https://img.shields.io/badge/Semantic%20Layer-6C63FF?style=for-the-badge\&logo=databricks\&logoColor=white)
+
+### AI & Data Products
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge\&logo=ollama\&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-5B5BF7?style=for-the-badge\&logo=anthropic\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+
+### Platform & Infrastructure
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazonaws\&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge\&logo=amazons3\&logoColor=white)
+![Amazon Redshift](https://img.shields.io/badge/Amazon%20Redshift-8C4FFF?style=for-the-badge\&logo=amazonredshift\&logoColor=white)
+
+### Production Evolution
+
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge\&logo=dbt\&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge\&logo=apacheairflow\&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge\&logo=githubactions\&logoColor=white)
+
+
 **PostgreSQL → Debezium → Kafka → Landing → Analytics → Semantic Layer → BI / AI**
 
 ---
@@ -29,6 +63,24 @@ The design deliberately separates:
 so downstream consumers do not directly depend on transactional databases.
 
 ---
+
+# Repository Navigation
+
+If you have only **2 minutes**, and want to skim the technical parts, start here:
+
+```text
+README.md
+    ↓
+docs/architecture.md
+    ↓
+infra/cdc/docker-compose.yml
+    ↓
+infra/cdc/postgres-connector.json
+    ↓
+ai/semantic_layer.yaml
+    ↓
+ai/app/web_app.py
+```
 
 ## Business Scenario
 
@@ -414,24 +466,6 @@ The data platform remains responsible for:
 The AI layer consumes those capabilities.
 
 ---
-
-# Repository Navigation
-
-If you have only **2 minutes**, start here:
-
-```text
-README.md
-    ↓
-docs/architecture.md
-    ↓
-infra/cdc/docker-compose.yml
-    ↓
-infra/cdc/postgres-connector.json
-    ↓
-ai/semantic_layer.yaml
-    ↓
-ai/app/web_app.py
-```
 
 ### Source generation
 
