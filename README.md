@@ -35,9 +35,6 @@
 ![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge\&logo=apacheairflow\&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge\&logo=githubactions\&logoColor=white)
 
-
-**PostgreSQL → Debezium → Kafka → Landing → Analytics → Semantic Layer → BI / AI**
-
 ---
 
 ## 30-Second Overview
