@@ -39,19 +39,17 @@
 
 ## 🧭 Repository Navigation
 
-If you have only **2 minutes**, and want to skim the technical parts, start here:
+If you have only **2 minutes**, and want to skim the technical parts, start here: /n
 
-**[README.md](./README.md)**
+**[Architecture](./docs/architecture.md)**/n
 ↓
-**[Architecture](./docs/architecture.md)**
+**[CDC Infrastructure](./infra/cdc/docker-compose.yml)**/n
 ↓
-**[CDC Infrastructure](./infra/cdc/docker-compose.yml)**
+**[Debezium PostgreSQL Connector](./infra/cdc/postgres-connector.json)**/n
 ↓
-**[Debezium PostgreSQL Connector](./infra/cdc/postgres-connector.json)**
+**[Governed Semantic Layer](./ai/semantic_layer.yaml)**/n
 ↓
-**[Governed Semantic Layer](./ai/semantic_layer.yaml)**
-↓
-**[AI Web Application](./ai/app/web_app.py)**
+**[AI Web Application](./ai/app/web_app.py)**/n
 
 ---
 
