@@ -1,6 +1,6 @@
 # Multi-Source Operational Data Platform
 
-> **A production-oriented data platform for a multi-regional fulfillment operator — integrating operational systems through CDC and event streaming, landing data for analytics, creating governed business models, and exposing trusted data to BI and AI applications.**
+> **A production-oriented data platform for a multi-regional fulfillment operator, integrating operational systems through CDC and event streaming, landing data for analytics, creating governed business models, and exposing trusted data to BI and AI applications.**
 
 ## 🧰 Tech Stack
 
